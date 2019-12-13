@@ -1,0 +1,173 @@
+html {
+	overflow: hidden;
+}
+body {
+    margin: 0;
+    font-size: 26px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    perspective: 1px;
+    transform-style: preserve-3d;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+#header {
+	width: 100%; 
+	height: 150px; 	
+	margin-top: 0; 
+	padding: 0; 
+	border: 0;
+	display: inline-block;
+	background: linear-gradient(to bottom, #ff0000 0%, #ffcccc 100%);
+	font-family: 'Julius Sans One'; font-size: 25px;
+	position: static;
+	
+} 
+.title{
+	color: white;
+	font-size: 2.5vw;
+	margin-top: 0;
+}
+/*dropdown nav bar reference https://www.w3schools.com/howto/howto_css_dropdown_navbar.asp*/
+/* Navbar container */
+.nav {
+  overflow: hidden;
+  display: inline-block;
+  background-color: #333;
+  text-align: center;
+  font-family: 'Raleway';
+  width: 100%;
+  margin: 0;
+  padding:0;
+  float: left;
+  position: static;
+
+}
+/* Links inside the navbar */
+.nav a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* The dropdown container */
+.prisonerbutton {
+  float: left;
+  overflow: hidden;
+}
+
+/* Dropdown button */ 
+.prisonerbutton .dropbtn {
+  font-size: 16px; 
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Add a red background color to navbar links on hover */
+.nav a:hover, .prisonerbutton:hover .dropbtn {
+  background-color: red;
+}
+
+/* Dropdown content (hidden by default) */
+.prisoners-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  text-decoration: none;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+/* Links inside the dropdown */
+.prisoners-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+.nav a:active {
+	background-color: red;
+	color: white;
+}
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.prisoners-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.prisonerbutton:hover .prisoners-content {
+  display: block;
+}
+.banner { 
+	width: 100%;
+	display: block;
+	position: static;
+}
+.banner > .banner-image {
+	width: 100%;
+	height: 400px;
+	display: block;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.parallax-wrapper2 {
+    width: 100vw;
+    height:100vh;
+    padding-top:5vh;
+    z-index: 2;
+    position: relative;
+}
+.content {
+    margin: 0 auto;
+    padding: 50px;
+    width: 50%;
+    background: #aaa;
+}
+.avatar {
+	display: block;
+	margin-left:auto;
+	margin-right:auto;
+	background: url(vballportrait.jpg);
+	background-size: 100%;
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	text-align:center;
+
+}
+.about{
+	text-align:center;
+}
+.text {
+	font-family: 'Raleway'; font-size: 18px;
+}
+#footer {
+	position: relative;
+	text-align: center;
+	color: white;
+	font-size: 12px;
+	bottom: 0;
+	width:100%;
+	height:60px;   /* Height of the footer */
+	background:#000000;
+}    

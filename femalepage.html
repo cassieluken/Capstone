@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Loads in icon library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Capstone
+</title>
+<link rel="stylesheet" type="text/css" href= "style1.css">
+<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+
+</style>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+	<script type="text/javascript">
+  
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+ function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Percent of --', 'Males', 'Females'],
+          ['Prisoners with serious psychological distress (SPD)', 14, 20.5],
+          ['Prisoners with a history', 34.8, 65.8 ],
+		  ['Jail inmates with serious psychological distress (SPD)', 25.5, 32.3],
+		  ['Jail inmates with a history', 40.8, 67.9]
+        ]);
+
+        var options = {
+          chart: {
+            title: 'Chart 1: Prevalence of mental health indicators among prisoners and jail inmates, by gender, 2011-2012',
+            subtitle: 'SPD is determined by the K6 scale. See General Population tab to see details about K6 survey. History includes inmates who had ever been told by a mental health professional they had a mental disorder.',
+          },
+          bars: 'horizontal', // Required for Material Bar Charts.
+          hAxis: {format: 'decimal'},
+          height: 350,
+		  colors: ['#a7cef0', '#c63939']
+        };
+		
+        var chart = new google.charts.Bar(document.getElementById('chartContainer'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+
+        
+        
+ }
+</script>
+  <script type="text/javascript" src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</head>
+<body>
+  </head>
+<body>
+<div id="container"></div>
+<div id="header">
+	<div class="title">
+		<h1> Mental Health in the Prison System </h1>
+	</div>
+</div>
+<div class="nav">
+	<a href="homepage.html">Home</a>
+	<div class="prisonerbutton">
+		<button class="dropbtn">Incarcerated People
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="prisoners-content">
+			<a href="genpop.html">General Population</a>
+			<a class="active" href="femalepage.html">Incarcerated Women</a>
+			<a href="solitarypage.html">Solitary Confinement</a>
+			<a href="deathrowpage.html">Death Row</a>
+		</div>
+	</div>
+	<a href="officerspage.html">Officers</a> 
+	
+		
+	</div>
+	<div class="banner">
+		<img class="banner-image" src="https://www.innocenceproject.org/wp-content/uploads/2016/04/women-in-prison-Kenneally.jpg" alt="banner-image">
+		<div class= "banner-title">
+			<h1> Women in Incarceration</h1>
+		</div>
+	</div>
+
+</div>
+
+<div id="content">
+	<div class="text">
+	<br>
+	
+	<h1>The Dramatic Gender Disparity</h1>
+	
+	<p>Incarcerated women deserve supplementary analysis because of the added stressors and factors they experience over incarcerated men. Women have 
+described experiencing different encounters than men during incarceration that harm their mental health additionally. Further, their high rates of 
+illness indicate that gender-specific treatment may need to be explored to reduce the rates of mental illness in prison/jail for women. Females 
+make up 7.1% of the prison population according to the <a href="https://www.bop.gov/about/statistics/statistics_inmate_gender.jsp"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Federal Bureau of Prisons</a> (2019) but dominate mental health statistic percentages when 
+broken up by gender. </p>
+	
+		<div id="chartContainer" style="height: 250px; width: 90%;">
+		</div>
+	<br><br><br><br><br><!--Breaks because the chart was overlapping the text when it shouldn't have-->
+	<div class="source"><sub>Chart 1: This data was taken from (<a href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>Bronson & Berzofsky </a>, 2017).</sub></div>
+	
+	<p>Females had much higher rates of mental health problems than male inmates at all levels: local, state, and federal prison. The prevalence of 
+mental health problems is becoming a well-known problem in the prison industry. The dramatic gender disparity has also begun receiving more 
+attention. From a biological perspective alone, women are twice as likely to suffer from depressive disorders than men and are three times more 
+likely to suffer from an anxiety disorder or attempt suicide (<a 
+href="https://www.stress.org/why-do-women-suffer-more-from-depression-and-stress"><i class='fas fa-link' style='font-size: 15px;' ></i>"Why Do Women 
+Suffer More From Depression And Stress?", 2014)</a>. Some of the factors that contribute to this disparity could stem from hormonal differences, 
+tendencies to be more involved with personal relationships, and the likelihood of women to consult a physician over men and therefore are more likely 
+to be diagnosed (<a 
+href="https://www.stress.org/why-do-women-suffer-more-from-depression-and-stress"><i class='fas fa-link' style='font-size: 15px;' ></i>"Why Do Women 
+Suffer More..." </a>, 2014). Women already have a higher chance of experiencing depression, anxiety, and stress but when you add the unique stressors 
+that lead women to incarceration and the stressors of life while incarcerated, these chances increase.  There are 
+stress and trauma-related factors that greatly affect the probability of women to develop mental health issues and place individuals on a path towards 
+crime. Those with previous trauma who could not get off the path come into jail/prison with abuse that has shaped their lives and minds.</p>
+
+	<h2>Entering Incarceration with Abuse</h2>
+	
+	<p>In 2006, the Bureau of Justice Statistics reported that 68.4% of female inmates in State prisons who had a mental health problem had a family 
+background with past physical or sexual abuse and 74.5% had substance dependence (<a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>James & Glaze, 2006)</a>.  Past interpersonal physical and sexual 
+abuse is a traumatic experience and for women, it seems like a standard within incarceration. A 2005 research project on trauma exposure, mental 
+health functioning, and program needs of women in jail, reported 98% of their sample to have been exposed to at least once category of trauma: 71% 
+reported violence perpetrated by a husband, partner, or boyfriend and 62% reported having been exposed to childhood trauma (<a href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Green, Miranda, Daroowalla, & Siddique)</a>. The project also gathered data on the specific types of traumas, 
+their psychiatric disorders, and substance abuse problems. </p>
+
+	<div class="source"><sub>Hover over table 1 to enlarge. This data was taken from (<a href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Green et al., 2005)</a></sub></div>
+	<img class="image_zoom" src="femaletraumatable.png" alt="History of mental health table">
+	
+	<p>Any traumatic experience produces a chemical response in the body that causes symptoms of raised blood pressure, increased heart rate, increased 
+sweating, and a loss of appetite; feelings of sadness, anger, and guilt are also common (<a href="https://www.mentalhealth.org.uk/publications/impact-traumatic-events-mental-health"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>"The impact of traumatic events on mental health", 2019)</a>. 
+When these feelings persist and are overlooked they lead to serious mental health issues such as PTSD and depression. Overlooking these feelings 
+could mean not going to a mental health professional for treatment or even trying to self-medicate using the wrong substances. Trauma is likely a 
+determining factor for involvement in criminal actions and behavior when not adequately treated. There is a correlation because child abuse drives 
+victims to run away early from home and abuse-related psychopathology like PTSD leads them to self-medicate with drugs and alcohol (<a href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Green et al., 2005)</a>.  Interactions with drugs and alcohol then place these women at risk for criminal activity. Experts look at the disparity in statistics and 
+don't necessarily understand it. Ron Honberg, senior policy adviser at the National Alliance for Mental Illness has speculated a driving factor to 
+be that "incarcerated women have experienced sexual trauma before their imprisonment at a much higher rate than men. They are also likely more 
+inclined to report psychological distress to the prison mental health services than male inmates" (<a href="https://www.themarshallproject.org/2017/06/22/the-mental-health-crisis-facing-women-in-prison"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Villa, 2017)</a>.  Men hesitate to report child 
+sexual abuse for numerous reasons. Gender analysis shows men hesitate out of a fear of being viewed as homosexual, being perceived as a victim, or 
+becoming an abuser, all the while wanting to avoid stigmatization or isolation because of the belief that boys are rarely victimized (<a href="https://www.tandfonline.com/doi/full/10.1080/15325020500193895?scroll=top&needAccess=true
+"><i class='fas fa-link' style='font-size: 15px;' ></i>Alaggia, 2005)</a>. Women being more inclined to report does influence these numbers but there is still a higher rate 
+of sexual trauma for women that overpowers men's rates. Women face more sexual trauma before imprisonment but they also more frequently experience sexual abuse from prison 
+staff than men. Men have high rates of rape and sexual abuse in prison but more often the encounter is by other inmates "because staff failed to adequately 
+supervise inmates or respond appropriately to complaints of unwanted sexual activity. In some prisons, staff tacitly as well as explicitly condoned 
+inmate-on-inmate abuse" (<a href="https://www.hrw.org/news/2007/12/15/us-federal-statistics-show-widespread-prison-rape#"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>"US: Federal Statistics Show Widespread Prison Rape", 2007)</a>. On the contrary, violence between inmates in women's prisons 
+occurs less frequently than in men's prisons (<a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Harner & Riley, 2013)</a>. Female inmates experience different and sometimes more stressors when compared 
+to male inmates. For women, a majority of their stressors are elicited from abuse and treatment from staff inside of prison so for many after 
+coming from an abusive childhood their lives in prison are quite similar. </p>
+
+	<h2>Abuse Inside of Prison</h2>
+	<p>Five years ago Tutwiler Prison for Women faced major investigation by the Department of Justice after investigators found staff-on-prisoner sexual abuse and 
+harassment after inmates reported feeling unsafe. A former Tutwiler inmate, Lasiter, described that one guard, knowing an inmate liked pecans, would place them on the 
+inmate's bunk as a sign to meet up later for sex (<a href="https://www.correctionsone.com/treatment/articles/alas-womens-prison-shows-challenges-of-federal-intervention-nl2dAbD0GdqznJcn/"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Thornton, 2019)</a>. Lasiter continued to list other accounts of sexual abuse and guards being inappropriate that she had witnessed. 
+In each situation Lasiter described, the prisoners would not report the occurrence in order to stay out of 'the hole' (<a 
+href="https://www.correctionsone.com/treatment/articles/alas-womens-prison-shows-challenges-of-federal-intervention-nl2dAbD0GdqznJcn/"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Thornton, 2019)</a>. Unfortunately, Tutwiler is one of many women prisons with these conditions of sexual harassment and inmates not 
+having a fair environment to report it. Women risk additional punishment when speaking out about receiving inappropriate treatment. One woman stated she was removed from an 
+institutional program after she reported an officer doing inappropriate searches (<a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Harner & Riley, 2013)</a>. The threat of punishment contributes to reasons why inmates do not speak up. These situations place stress 
+on inmates putting them in a position to have an internal debate to decide whether they report officer misconduct and risk penalization or to let it happen and cause more 
+trauma. Another inmate reported that "Even when the officers lash out, we can’t say anything because then we get it worse from the officer. I have a very abusive boss. He 
+calls us dumb and retarded. I can’t say anything, though. I eat that [ignore it] because I want to go home to my kids" (<a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Harner & Riley, 2013)</a>. The common denominator here is the fear of getting in trouble when reporting abuse or misconduct of 
+officers. For some, they fear not getting into the treatment programs that they need or not being able to go back to their families. Prisons are depriving inmates of 
+reporting rights by setting a standard that inmates will get punished for exercising those rights. These officers are exploiting their power and control over inmates. The 
+Human Rights Watch stated that "all sexual interaction between staff and inmates is inherently coercive because of the inherent disparity in power between staff and inmates, 
+and thus can never be considered 'voluntary' on the part of the inmates" (<a href="https://www.hrw.org/news/2007/12/15/us-federal-statistics-show-widespread-prison-rape#"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>"US: Federal Statistics Show Widespread Prison Rape", 2007)</a>. Even when the interactions aren't physical or sexual, there can be 
+lasting detriments that create additional trauma and stress for inmates and are still inherently coercive because of the power disparity. Inmates feel that officers have no 
+respect when they talk to inmates or handle situations. Unique to women, they can give birth in prison which is already a strained experience under the circumstances but 
+officers can often make experiences like this worse for inmates. During birth, one inmate described her experience: </p>
+	
+	<div class="blockquote">	
+	<p><q>I had to have an officer stand right in front of me while I was having my baby. Now every time I see her, it makes me uncomfortable. She could have just moved to 
+the side. But she just wanted to watch me deliver. That was so ignorant. Every time I was pushing, I had to look at her face. Tell me, where does 'care, custody, and 
+control' [i.e., the principle roles of many departments of correction] come into that? It was the most degrading experience ever</q></p>
+		<div class="blockquote-footer">
+		<p>-Inmate, <a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>The Impact of Incarceration on Women’s Mental Health: Responses From Women in a Maximum-Security Prison</q></a></p>
+		</div>
+	</div>
+	
+	<p>The officer invaded the privacy of the inmate and also tainted her birthing experience with feelings of degradation. The abuse is not always physical or sexual, it 
+can be emotional and verbal. The harm that is done also doesn't have to be intentional. One woman, incarcerated for prostitution, admitted in a focus group:</p>
+
+	<div class="blockquote">	
+	<p><q>I’ve been depressed since I was little. I’ve been homeless and a prostitute on the streets. I’ve been down in the dumps and my depression is getting worse. I don’t 
+have any help from home. . . . I can’t stomach the meds [medications]. I force myself not to isolate. I got bipolar, low self-esteem, severe depression. The racing 
+thoughts keep me awake. I’m so tired, but I can’t sleep. I am so stressed. Every single day I’m stressed and scared in here. I got picked for a random drug test in here 
+once, but I couldn’t pee [urinate]. I kept trying but it wouldn’t come out. They give you a few hours to pee, but I just couldn’t go because I was so anxious and 
+stressed. The officers knew I don’t do drugs in here but they got to follow their rules. So I got sent to the hole for refusing to pee. Now I’m such a nervous wreck 
+about it. I worry about getting tested again, so I hold my pee each morning until 11:00 a.m. [head] count. After I pee, I drink a lot of water, tea, and coffee so I can 
+always go if they make me. Every day I have to do this, and this stress makes me crazy</q></p>
+		<div class="blockquote-footer">
+		<p>-Inmate, <a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>The Impact of Incarceration on Women’s Mental Health: Responses From Women in a Maximum-Security Prison</q></a></p>
+		</div>
+	</div>
+	
+	<p>An event as simple as being able to pee has caused enough mental distress for this inmate that she has adjusted her days to make sure she doesn't get in trouble. The 
+harm here is unintentional and the inmate knows the guards are just following the rules but the event has strained the inmate's lifestyle and caused stress and anxiety 
+which negatively impacted her mental health. Another example of a non-physical case of mental health strain was when a woman reported having flashbacks of being 
+physically and sexually abused by her father and when she wanted to be in the abuse program she was told there were people worse off than her and that her abuse wasn't 
+as bad as others' (<a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Harner & Riley, 2013)</a>. Not only is the staff belittling this inmate's trauma but she is getting refused access to a program she 
+believed could help her with her mental health. Even when officers act professionally there can be harm done to inmates' mental health. Even when done correctly, full-body 
+strip searches produce copious amounts of stress for women who had suffered past abuse to the point where they would avoid seeing visitors, including their children, to 
+eliminate stress and humiliation (<a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Harner & Riley, 2013)</a>. The trauma affects their mental health to the point where they no longer want to maintain important 
+familial visits. A majority of women in a 2005 study of mental health functioning indicated low levels of parental functioning, indicating a general lack of understanding of 
+children, difficulty helping children meet their needs, and seeing children as objects of adult gratification (<a href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Green et al., 2005)</a>. Experts generally agree that a goal of intervention and rehabilitation is family reunification because of the 
+importance of family as a support factor (<a href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Green et al., 2005)</a>. For women with lacking family bonds and parenting skills, there is no support from family and can worsen mental 
+health. For women with good family bonds, there is support but this produces constant worrying about family and distress from being away from them. Family can be an 
+important factor in mental health. Even when the harm is unintentional the lasting effects on mental health prevent rehabilitation. These are all real-life incidents that 
+female inmates admitted to happening. Whether intentional or unintentional, staff widely make incarceration a much more stressful and traumatizing experience for female 
+inmates. Each woman from these incidents reported that they felt their mental health worsening while in prison. From the words of an inmate: "They used to tell them, 'Their 
+punishment is to be in here. It is not your job to punish them.' But they don’t come in with that attitude anymore", incarceration is no longer the only punishment; their 
+punishment is the lasting mental health issues that now comes with incarceration (<a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>Harner & Riley, 2013)</a>.</p>
+	
+	<h1>What is being done or can be done?</h1>
+	
+	<p>After seeing the different experiences that women go through it is important to apply services that target women. These services that acknowledge gender-specific 
+victimization experiences are becoming more common but they continue to be an exception rather than a rule (<a href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Green et al., 2005)</a>. The integration of these services could lessen the dramatic gender disparity in mental health. Since 1995, 
+incarceration has been increasing more for women than men; the male population has risen by 3.8% annually while the female population has risen by 5.9% annually (<a href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Green et al., 2005)</a>. Since the population is increasing, at a faster rate women need additional attention to reduce the prevalence of 
+mental health problems in the growing population. Research needs to be done as the population grows because it would be valuable to understand which treatment programs and 
+what features of them make women feel that their mental health improved. On top of research, conditions need to be reformed to make prisons a safer environment for women. 
+The below video is an example of justice for these inmates who experienced various forms of abuse from officers as discussed above. Anthony Kearns, the Hunterdon County 
+Prosecutor, described the inmates as being vulnerable in a situation where the officers had complete power and control over their lives behind bars (<a href="https://www.youtube.com/watch?time_continue=100&v=wExeq5F96LI&feature=emb_logo"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>"Officers arrested for sexual abuse at N.J. womens prison", 2017)</a>. He goes on to 
+note that "all inmates have a right to be safe within the institutions where we as a society demand they be detained" (<a href="https://www.youtube.com/watch?time_continue=100&v=wExeq5F96LI&feature=emb_logo"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>"Officers arrested for sexual abuse...", 2017)</a>. Incarceration is the punishment. The system 
+needs to enforce these policies to assure the safety of all inmates.</p>
+
+	<div class="video"><iframe width="1013" height="570" src="https://www.youtube.com/embed/wExeq5F96LI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+	</div>
+	
+	<!--the div below closes class=text-->
+	</div>
+	
+	<div class="references">
+	<h1 style="text-align:center;">References</h1>
+	<p class="refText">
+	Alaggia, R. (2005). Disclosing the Trauma of Child Sexual Abuse: A Gender Analysis. Journal of Loss and Trauma, 10(5), 453–470. Retrieved from <a 
+href="https://www.tandfonline.com/doi/full/10.1080/15325020500193895?scroll=top&needAccess=true"> 
+https://www.tandfonline.com/doi/full/10.1080/15325020500193895?scroll=top&needAccess=true</a>
+	<br><br>
+	
+	Bronson, J., & Berzofsky, M. (2017). <a href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf">Indicators of Mental Health Problems Reported by Prisoners and Jail 
+Inmates, 2011-12.</a> Indicators of Mental Health Problems Reported by Prisoners and Jail Inmates, 2011-12. U.S. Department of Justice - Bureau of Justice Statistics.
+<br><br>
+
+Federal Bureau of Prisons. (2019, November 23). Retrieved November 26, 2019, from
+<a href="https://www.bop.gov/about/statistics/statistics_inmate_gender.jsp.">https://www.bop.gov/about/statistics/statistics_inmate_gender.jsp.</a> 
+<br><br>
+
+Green, B., Miranda, J., Daroowalla, A., & Siddique, J. (2005). Trauma Exposure, Mental Health Functioning, and Program Needs of Women in Jail. Crime & 
+Delinquency, 51(1), 133–151. Retrieved from <a 
+href="https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477">https://journals.sagepub.com/doi/pdf/10.1177/0011128704267477</a> 
+<br><br>
+
+Harner, H., & Riley, S. (2013). The Impact of Incarceration on Women's Mental Health: Responses From Women in a Maximum-Security Prison. Qualitative Health Research, 23(1), 
+26–42. Retrieved from <a href="https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452"> https://journals.sagepub.com/doi/pdf/10.1177/1049732312461452</a>
+<br><br>
+
+James, D. J., & Glaze, L. E. (2006). <a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf">Mental Health Problems 
+of Prison and Jail Inmates. Mental Health Problems of Prison and Jail Inmates </a>. U.S. Department of Justice - Bureau of Justice Statistics.
+<br><br>
+
+Officers arrested for sexual abuse at N.J. womens prison. (2017, January 23). Retrieved 2019, from <a
+href="https://www.youtube.com/watch?time_continue=100&v=wExeq5F96LI&feature=emb_logo.">
+https://www.youtube.com/watch?time_continue=100&v=wExeq5F96LI&feature=emb_logo.</a>
+<br><br>
+
+The impact of traumatic events on mental health. (2017, June 13). Retrieved 2019, from <a 
+href="https://www.mentalhealth.org.uk/publications/impact-traumatic-events-mental-health."> 
+https://www.mentalhealth.org.uk/publications/impact-traumatic-events-mental-health.</a> 
+<br><br>
+
+Thornton, W. (2019, May 6). Ala.'s women's prison shows challenges of federal intervention. Retrieved 2019, from <a
+href="https://www.correctionsone.com/treatment/articles/alas-womens-prison-shows-challenges-of-federal-intervention-nl2dAbD0GdqznJcn/.">
+https://www.correctionsone.com/treatment/articles/alas-womens-prison-shows-challenges-of-federal-intervention-nl2dAbD0GdqznJcn/.</a>
+<br><br>
+
+US: Federal Statistics Show Widespread Prison Rape. (2007, December 15). Retrieved 2019, from <a 
+href="https://www.hrw.org/news/2007/12/15/us-federal-statistics-show-widespread-prison-rape#."> 
+https://www.hrw.org/news/2007/12/15/us-federal-statistics-show-widespread-prison-rape#.</a>
+<br><br>
+
+Villa, M. (2017, June 22). The Mental Health Crisis Facing Women in Prison. Retrieved 2019, from
+<a href="https://www.themarshallproject.org/2017/06/22/the-mental-health-crisis-facing-women-in-prison.">
+https://www.themarshallproject.org/2017/06/22/the-mental-health-crisis-facing-women-in-prison.</a> 
+<br><br>
+
+Why Do Women Suffer More From Depression And Stress? (2016, March 23). Retrieved November 26, 2019, from <a 
+href="https://www.stress.org/why-do-women-suffer-more-from-depression-and-stress">https://www.stress.org/why-do-women-suffer-more-from-depression-and-stress.</a> 
+<br><br>
+
+
+
+
+<br>
+</p>
+	</div>
+</div>
+<div class="progress-container">
+	<div class="progress-bar" id="myBar"></div>
+</div>
+<!--<div id="footer"> 
+	<div class="footer">	
+		<img class="rutgers-logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/Rutgers_University_Newark_logotype.svg/1024px-Rutgers_University_Newark_logotype.svg.png" alt="Rutgers Newark Logo" >
+	</div>
+</div>-->
+</body>
+</html>

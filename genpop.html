@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Loads in icon library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Capstone
+</title>
+<link rel="stylesheet" type="text/css" href= "style1.css">
+<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+
+</style>
+
+</head>
+<body>
+<div id="container"></div>
+
+</style>
+<div id="header">
+	<div class="title">
+		<h1> Mental Health in the Prison System </h1> 
+	</div>
+</div>
+<div class="nav">
+	<a href="homepage.html">Home</a>
+	<div class="prisonerbutton">
+		<button class="dropbtn">Incarcerated People
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="prisoners-content">
+			<a class="active" href="genpop.html">General Population</a>
+			<a href="femalepage.html">Incarcerated Women</a>
+			<a href="solitarypage.html">Solitary Confinement</a>
+			<a href="deathrowpage.html">Death Row</a>
+		</div>
+	</div>
+	<a href="officerspage.html">Officers</a> 
+	
+		
+	</div>
+	<div class="banner">
+		<img class="banner-image" src="https://www.newyorker.com/wp-content/uploads/2016/05/Posner-WhyItsNearlyImpossibleforPrisonerstoSuePrisons-1200.jpg" alt="banner-image">
+		<div class="banner-title">
+			<h1> General Population Mental Health </h1>
+		</div>
+	</div>
+
+
+</div>
+<div id="content">
+	<div class="text">
+	<div class="blockquote">	
+	<p><q>If you tried to design an environment where mental illness would thrive, you might end up with something much like jail or prison.</q></p>
+		<div class="blockquote-footer">
+		<p>-Maria Cramer, Jenna Russell, Michael Rezendes, Scott Helman, and Todd Wallack<a href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>There may be no worse place for mentally ill people to receive treatment than prison
+yet a growing number end up in the ‘new asylums’</q></a></p>
+		</div>
+	</div>
+	<h1>The statistics</h1>
+	<p> There are many factors to our criminal justice system that place strain on individuals involved within each level of the system. Lower level individuals, 
+otherwise referred to as inmates experience many strains as can be expected but the lasting effects result in symptoms of mental illness. In 2004 the Bureau of Justice found that, 43% of State 
+prisoners had symptoms that met the criteria for mania, 23% reported symptoms of major depression, and 15% met the criteria for a psychotic disorder (<a 
+href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>James & Glaze, 2006)</a>. At the jail level, 54% 
+reported symptoms that met the criteria for mania, 30% for major depression, and 24% for a psychotic disorder (<a 
+href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>James & Glaze, 2006)</a>. By 2005, more than half of all prison and jail inmates had a mental health problem; 705,600 or 56% of the population in State prisons, 78,800 or 45% of the 
+population in Federal, and 479,900 or 64% of the population in local jails (<a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>James & Glaze, 2006)</a>. Over the years, these numbers haven't improved. In 2011-2012 only 49.9% of the prison population did not 
+indicate a mental health problem, and of the 50.1% that did, 14.5% had serious psychological distress (<a 
+href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>Bronson & Berzofsky, 2017)</a>. For the jail 
+population, only 36% of inmates reported no indication of a mental health problem, and of the 64% that did, 26.4% had serious psychological 
+distress (<a href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>Bronson & Berzofsky, 2017)</a>. For 
+their psychological distress to be considered serious, they had to meet the threshold for the Kessler 6 (K6), a scale 
+from 0-24 that asks how often in the last 30 days the inmates felt nervous, hopeless, restless or fidgety, so depressed that nothing could cheer them up, that 
+everything was an effort, and worthless. Their responses are then converted into a numerical scale (<a 
+href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>Bronson & Berzofsky, 2017)</a>. (Reference the survey below for a recreated version)</p>
+	
+	<div class="quiz" style="border: 3px solid #a7cef0; padding: 2px 10px 10px 10px;">
+		<h2>Survey</h2>
+		<p>How often during the past 30 days did you feel:</p>
+		<label for="q1">nervous</label>
+		<select id="q1" name="q[]">
+			<option value="4">All of the time</option>
+			<option value="3">Most of the time</option>
+			<option value="2">Some of the time</option>
+			<option value="1">A little of the time</option>
+			<option value="0">None of the time</option>
+		</select>
+		<label for="q2">hopeless</label>
+		<select id="q2" name="q[]">
+			<option value="4">All of the time</option>
+			<option value="3">Most of the time</option>
+			<option value="2">Some of the time</option>
+			<option value="1">A little of the time</option>
+			<option value="0">None of the time</option>
+		</select>
+		<label for="q3">restless or fidgety</label>
+		<select id="q3" name="q[]">
+			<option value="4">All of the time</option>
+			<option value="3">Most of the time</option>
+			<option value="2">Some of the time</option>
+			<option value="1">A little of the time</option>
+			<option value="0">None of the time</option>
+		</select>
+		<label for="q4">so depressed that nothing could cheer them up</label>
+		<select id="q4" name="q[]">
+			<option value="4">All of the time</option>
+			<option value="3">Most of the time</option>
+			<option value="2">Some of the time</option>
+			<option value="1">A little of the time</option>
+			<option value="0">None of the time</option>
+		</select>
+		<label for="q5">everything was an effort</label>
+		<select id="q5" name="q[]">
+			<option value="4">All of the time</option>
+			<option value="3">Most of the time</option>
+			<option value="2">Some of the time</option>
+			<option value="1">A little of the time</option>
+			<option value="0">None of the time</option>
+		</select>
+		<label for="q6">worthless</label>
+		<select id="q6" name="q[]">
+			<option value="4">All of the time</option>
+			<option value="3">Most of the time</option>
+			<option value="2">Some of the time</option>
+			<option value="1">A little of the time</option>
+			<option value="0">None of the time</option>
+		</select>
+		<button id="btn">See Your Score</button>
+		<p id="score" style="display: inline-block"></p>
+	</div>
+	<p>With a score of 13 or higher, inmates were considered to have serious psychological distress (SPD). With a score of 8 to 12, inmates were considered to have an 
+anxiety disorder. These numbers show that a large percentage of the population has some type of mental health issue whether they developed it while in 
+prison/jail or if they began their sentences with preexisting issues. </p>
+<div class="blockquote">	
+	<p><q>If we want to fix the problem, we have to understand it.</q></p>
+		<div class="blockquote-footer">
+		<p>- J. Steven Lamberti<a href="http://www.futurity.org/mental-illness-prison-1447922-2/" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>How to keep people with mental illness out of prison</q></a></p>
+		</div>
+	</div>
+<p>The factor of when inmates develop their mental health issues results in different reform focuses. With these numbers, researchers and advocates know that our 
+prison system needs reform to reduce the number of mentally ill in our prisons. Understanding why mental health issues are common in the criminal justice system and when their symptoms are developing are 
+important to reform the system appropriately. </p>
+	<br>
+	<h1>Do inmates have a history of or develop mental health issues?</h1>
+	<p>With the development of mental health issues inside of prison, this speaks to the treatment of inmates and the effect their environment has on their mental 
+health. This means that inmates experience enough stressors to develop health issues. The development of mental health issues outside of prison, meaning 
+inmates had a preexisting history of mental illness, speaks to another crisis where the mentally ill are being convicted. </p> 
+</p>
+	<h2>History of a mental health problem</h2>
+	<p style="display: inline;">
+This crisis is about jailing people with mental illness who need treatment. As US psychiatric hospitals in the 1980s downsized, the trend of the mentally ill being 
+found in prisons grew (<a href="http://www.futurity.org/mental-illness-prison-1447922-2/"><i class='fas fa-link' style='font-size: 15px;' ></i>Roth-Rochester, 
+2017)</a>. Housing for the mentally ill decreased and displaced the mentally ill back into society with no mental health treatment. The mentally ill are four times 
+more likely to be arrested than other adults and they make up nearly 20% of the prison population (<a 
+href="http://www.futurity.org/mental-illness-prison-1447922-2/"><i class='fas fa-link' style='font-size: 15px;' ></i>Roth-Rochester, 2017)</a>. Their incarceration rates 
+are a direct consequence of under-funded and disorganized community mental health services. For those who are poor, homeless, or struggling with substance abuse, if they 
+commit a crime, whether it be violent or non-violent, they face imprisonment because they can not receive mental health treatment (<a 
+href="https://www.hrw.org/news/2006/09/05/us-number-mentally-ill-prisons-quadrupled#"><i class='fas fa-link' style='font-size: 15px;' ></i>"U.S.: Number of Mentally Ill in 
+Prisons Quadrupled", 2006)</a>. <div id="target" style="display: inline;">Mentally ill 
+individuals have unique criminogenic risk factors such as antisocial personality, substance abuse, social support for crime, and criminal thinking. These risk 
+factors when coupled with psychiatric issues like paranoia and psychosis, place them in a more vulnerable place where they are less responsive to standard 
+correctional intervention </div>(<a href="http://www.futurity.org/mental-illness-prison-1447922-2/"><i class='fas fa-link' style='font-size: 15px;' ></i>Roth-Rochester, 
+2017)</a>. Even though they are less responsive to incarceration, these individuals with a history of mental health 
+problems are found throughout our prison and jail system. </p>
+<p>For the Bureau of Justice's 2006 and 2011-12 reports, to consider an individual having a history of mental health problems, offenders had to have been told by a 
+mental health professional that they had a mental disorder, had to have stayed overnight in a hospital for mental health, or have used prescribed medication or 
+received professional therapy (<a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>James & Glaze, 
+2006)</a>. Table 1 displays the data collected in 2011-12, where 36.9% of prisoners and 44.3% of the jail inmates had been told by a professional that they 
+had a history of a disorder.</p>
+	<div class="source"><sub>Hover over table 1 to enlarge. This data was taken from (<a href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Bronson & Berzofsky, 2017)</a></sub></div>
+	<img class="image_zoom" src="historymhtable.png" alt="History of mental health table">
+	<p>Knowing such a large percentage of the population coming into prison/jail has mental health problems, causes a great demand for treatment at prisons. 
+Medical history is important for inmates to have just like the general population. Having a history of mental health treatment tells jails and prisons the most 
+appropritate and effective treatments to support the inmates' illnesses and health conditions. However, prisons and jails provide insufficient care for those 
+with mental health problems. The 2011-12 report shows that about 3 in 4 inmates who met the threshold for SPD had received mental health treatment in their lifetime 
+(<a href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>Bronson & Berzofsky, 2017)</a>. This shows 
+that a majority of inmates who had a history of treatment are still in need of treatment for SPD. There are still 1 in 4 inmates who have never received mental health 
+treatment in their lifetime and are considered to have SPD. The 1 in 4 here could represent a population that has developed their mental health problems 
+during incarceration or has never been professionally diagnosed. 
+</p>
+	<h2>A new diagnosis</h2>
+	<p> Inmates who did not previously have a history of a mental health issue are considered a new diagnosis of related symptoms. In 2006, the Bureau of Justice reported 
+that there were high proportions of inmates with mental health symptoms without a history (<a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas 
+fa-link' style='font-size: 15px;' ></i>James & Glaze, 2006)</a>. 
+Keep in mind, if there was no history found or diagnosed previously this does not guarantee that there was no history prior to the interview, just that they have 
+not gotten treatment by a professional before. Table 2 breaks up those who had a history of mental problems, just the symptoms, and both.</p>
+	<div class="source"><sub>Hover over table 2 to enlarge. This data was taken from (<a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>James & Glaze, 2006)</a></sub></div>
+	<img class="image_zoom" src="historymhtable2.png" alt="History of mental health table">
+	<p>The population that had symptoms and no history was the largest of the three. We can either deduce from this data that there is a high rate of developing cases of 
+symptoms or that this population was never properly diagnosed or received treatment to be categorized as having a history. To get to the root of the cause for the high 
+population of mental health problems in the prison/jail system, research is important to distinguish whether inmates are developing these symptoms, entering into the system 
+with these symptoms, or both. The numbers are there, and Jamie Fellner, the director of Human Rights Watch for the U.S. is quoted saying as <q>the number of mentally ill 
+inmates surges, prisons remain dangerous and damaging places for them... Prisons are woefully ill-equipped for their current role as the nation's primary mental health 
+facilities</q>(<a href="https://www.hrw.org/news/2006/09/05/us-number-mentally-ill-prisons-quadrupled#"><i class='fas fa-link' style='font-size: 15px;' ></i>"U.S.: Number 
+of Mentally Ill in Prisons Quadrupled", 2006)</a>. The incarceration lifestyle is strenuous and can foster PTSD, causing those who did not have a prior history to now 
+develop one because 
+of the stressful environment. Alternatively, the symptoms-only population may also include those who were mentally ill already and never received treatment by a 
+professional. Understanding these factors is important in deciding how to reform the system to reduce the amount of mentally ill who are incarcerated. For those who 
+developed symptoms due to being incarcerated, this shows that reform needs to happen within the environment whether it be creating more support groups or treatment within 
+these prisons. If people are entering the system with symptoms of mental health issues, whether or not they have been diagnosed by a professional before, this would 
+support the claim that as a society we are failing to treat our mentally ill and instead are imprisoning them. </p>
+	<div class="blockquote">	
+	<p><q>Along with race and poverty, mental illness has become a salient 
+feature of mass incarceration, one that must be accounted for in any discussion about criminal justice reform.</q></p>
+		<div class="blockquote-footer">
+		<p>- Alisa Roth<a href="https://www.theguardian.com/society/2018/mar/31/mental-health-care-crisis-overwhelming-prison-jail" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>A 'hellish world': the mental health crisis overwhelming America's prisons</q></a></p>
+		</div>
+	</div>
+	<p>The racial inequality within our criminal justice system has been widly studied as one out of every three African American men and one out of every six Hispanic men 
+are estimated to be arrested at some point in their lifetimes; for the mentally ill, it is estimated that one in two will be arrested at some point in their lifetimes (<a 
+href="https://www.theguardian.com/society/2018/mar/31/mental-health-care-crisis-overwhelming-prison-jail"> <i class='fas fa-link' style='font-size: 15px;' ></i>Roth, 
+2018)</a>. Mental illness needs to join race and poverty in the conversation about disparities in our prison system and until then, regardless of where the mental illness is stemming from, whether it developed during incarceration or prior to incarceration, these individuals need treatment. 
+Our criminal justice system is now 
+the country's largest provider of psychiatric care and for some the primary means of getting mental healthcare.</p>
+	<br>
+	<h1>Failure to treat</h1>
+	<p>With the growing population of mentally ill inmates, prisons have become ill-equipped to handle mental healthcare to this degree. According to the Human Rights Watch, the deficient 
+mental health services that prisons and jails provide leaves inmates being under-treated or not treated at all (<a 
+href="https://www.hrw.org/news/2006/09/05/us-number-mentally-ill-prisons-quadrupled#"><i class='fas fa-link' style='font-size: 15px;' ></i>"U.S.: Number of Mentally Ill in 
+Prisons Quadrupled", 2006)</a>. For many inmates suffering from mental health problems, they receive little treatment and have limited access to medicine that help ease 
+their symptoms. There is an ongoing cycle that leaves the mentally ill not receiving the treatment they need to get better both inside and outside of prison and as their 
+conditions worsen during incarceration, in the case they do get out, they are left worse off than when they entered the system causing recidivism to be the only option they 
+have for the possibility of treatment. In the 2011-12 Bureau of Justice 
+report, about a third of inmates with a mental health indicator was currently receiving treatment (<a href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i 
+class='fas fa-link' style='font-size: 15px;' ></i>Bronson & Berzofsky ,2017)</a>. The table below displays this data by time period, treatment type, and type of mental 
+health indicator. </p>
+	<div class="source"><sub>Hover over table 3 to enlarge. This data was taken from (<a 
+href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Bronson & Berzofsky ,2017)</a></sub></div>
+	<img class="image_zoom" src="treatmentmhtable.png" alt="Treatment 2011-12 Chart">
+	<p>The percentage of inmates who had received treatement at some point in their lifetime was the highest, and as they entered prison 54 of the 74 
+percent received treatment since admission and even less were receiving treatment currently. The lack of treatment could stem from many factors. For one, 
+the shortage of staff has contributed to a lack of health providers in the system. The 
+shortage of staff in general means fewer psychiatrists and treatment professionals to go around, but also 
+the shortage of qualified staff is a factor. Staff members that specialize in caring for the mentally ill are considered qualified here. Having a sufficient presence 
+of qualified staff is important because often, unqualified prison staff punishes inmates for displaying symptoms of mental illness such as delusions, being disruptive, 
+attempted suicide, and hyperactivity when qualified staff would know how to better help them/discipline them if they present symptoms and to distinguish when they are 
+a threat or not. Additionally, 
+diagnosing an inmate is difficult for underqualified staff, as inmates "fake or exaggerate their problems to avoid being put in solitary confinement or to get valuable 
+medication that they can sell, trade or abuse. But prisoner advocates and attorneys say that such skepticism leads staff members to write off legitimate mental-health 
+needs as false reports" (<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018)</a>. Qualified staff would be better equipped to write off illegitimate claims of mental illness to assure that legitimate claims being 
+written off as false reports are minimized. With the shortage of staff, work overload is also growing. The full-time mental health staff in just Massachusettes state is 25 
+percent smaller now than in 2012 while the number of inmates in treatment has remained the same  (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. Also, seven of fifteen prisons 
+in Massachusetts are federally designated as in 'extreme need' for more clinicians (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. Rural and remote facilities especially have a hard time retaining mental-health staff. Doug Lemon, a former chief 
+psychologist at two federal prisons in Kentucky admits that most psychologists won't want to live in a rural area, so regardless if we say this prison 'should' have five 
+psychologists but we can only find three to come they will still have the same mission that needed five psychologists (<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018)</a>. Additionally, these shortages worsened under the Trump administration after hiring freezes to cut spending, forcing the bureau to 
+require some counselors to double as corrections officers; by 2016, the bureau instructed wardens to stop using psychologists for non-mental health-related tasks but they 
+are still asked to do 'odd' jobs such as working gun towers and escorting prisoners (<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018)</a>. These additional jobs took psychologists and counselors away from their positions so they could not devote themselves 
+to treatment of inmates. The shortage of staff hurts mentally ill inmates from having the best treatment options or to even receive treatment at all. The shortage also has a detrimental effect 
+on the mental health of the staff as well. (You can learn more about staff mental health issues, specifically Correctional Officers' Wellness, under the officer's tab).  </p>
+
+<p>Similarly, the lack of suitable facilities and resources contributes to the lack of treatment. These factors are primarily influenced by money and in this case the lack 
+thereof. In particular, Massachusetts prisons have struggled to allocate enough spending for mental health care and their health care spending is also among the lowest in 
+the nation. The state has continually cut costs, <q>Part of the savings came from drastically reducing prisoner prescriptions, targeting medicines with abuse potential — 
+medicines that are also, for some patients, the most effective at controlling symptoms — and largely ending treatment for ADHD. From 2010 to 2015, prison mental health 
+providers reduced the average number of inmate prescriptions by 35 percent, ... allowed them to eliminate some 2,000 prescriptions they deemed unnecessary</q> (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. From 2013 to 2014 there was a $3.7 million drop in mental health care spending that state officials could not definitively explain. Because of 
+these budget cuts, the full array of services are only available to those deemed as the sickest. For others who don't make it into special units or programs for their 
+symptoms get minimal care, which could be one therapy session a month, a short check-in from a psychiatrist four times a year, and for those who are considered 
+'legitimate' a prescription from a limited list of medications (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. </p>
+
+	<div class="source"><sub>Hover over chart 1 to enlarge. This data was taken from (<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018).</a></sub></div>
+	<img class="image_zoom" src="declineincare CHART.png" alt="Care Chart">
+	<br>
+	<p style="display:inline">Another factor that contributes to the lack of treatment for mentally ill inmates is the presence of prison rules and policies that conflict with treatment. The 
+policy change chart 1 references occurred in 2014 amid mounting criticism and legal pressure for the Federal Bureau of Prisons to provide better care and 
+treatment for inmates with mental-health issues (<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018)</a>. A former Bureau of Prisons psychologist stated <q>You doubled the 
+workload and kept the resources the same. You don't have to be Einstein to see how that's going to work</q> (<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018)</a>. Some of these new prison rules entailed prison staff to evaluate whether inmates were ill enough to require regular treatment or to remain on 
+different care levels (<a href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Thompson & Eldridge, 2018)</a>. <div id="target2" style="display:inline">In February of 2018, the Bureau of Prisons had classified only 3 percent of inmates with serious enough 
+symptoms to require regular treatment and this followed the Bureau of Prisons changing its rules, without the resources needed to implement them incentivizing employees to 
+downgrade inmates to lower care levels </div>(<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018)</a>.</p>  
+<div class="source"><sub>Hover over infographic to enlarge. This data was taken from (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Cramer et al.,2016)</a></sub></div>
+	<img class="image_zoom" src="mental health chart - Nick Lynch piece.png" alt="MA Chart">
+<p>On top of all of this, state prisoners who had a mental health problem expected to serve 4 months longer than those without 
+according to the 2006 report (<a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>James & Glaze, 
+2006)</a>. These inmates are serving longer sentences with no treatment while their conditions worsen. In the case that they get released this causes many issues for them 
+outside of incarceration. Inmates' diagnoses can determine how they do outside of incarceration. A postitive diagnosis can decide whether they secure disability benefits 
+or treatment after being released and those who were on higher levels of care also receive more pre-release planning on how to get them their medications and to find a 
+supportive place to live (<a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Thompson & Eldridge, 2018)</a>. The following article expresses most of the details discussed previously about mental health prisoners: <a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"> this is Nick Lynch's story.</a> Nick Lynch turned 
+out sicker at release than when he had gone to prison because he received little treatment and had limited access to medicine. It was only until his condition spiraled and 
+he attempted suicide and mutilated himself, did he find better care and medicines. Lynch had an ongoing addiction while in prison and received no treatment for it.</p> 
+
+	<div class="source"><sub>Hover over image to read more about Lynch's struggle once leaving prison.</sub></div>
+	<div class="container">
+	  <img src="nicklynch.jpg" alt="Avatar" class="image">
+	  <div class="overlay">
+		<div class="overlay_text">Nick left prison with a limited supply of medications. Before Nick could meet with a psychiatrist, he had to meet 
+multiple times with a therapist, who could not prescribe medications and also took a lengthy time to find as an outpatient health provider from the 
+prison. When his medications ran out he went to the hospital for a refill and received a 10-day supply with a warning that any further requests would be 
+considered "drug-seeking behavior and would probably be denied" (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. Regardless of Lynch's attempts to get back on track, go back to school, and build a new life, he was arrested again. Lynch 
+apologized to his father admitting that “The drugs made my mind work in a different way and without them I was a ball of anxiety and sickness,” he wrote. 
+“I am so sorry I hurt you Dad... You did all you could. I love you more than anything” (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. </div>
+	  </div>
+	</div>
+
+<p>Lynch struggled to get the treatment and medications he needed inside and outside of prison causing him to recidivate. In 2015 just in Massachusettes, 
+more than 15,000 prisoners walked out of prison with a third suffering from mental illness and half with addiction; as they reenter society their 
+risk of problems is amplified while having to cope with the experience of incarceration (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. To further address this ongoing cycle of mental health leading to incarceration: <q>Within three years of being 
+released, 37 percent of inmates who leave state prisons with mental illnesses are locked up again, compared with 30 percent of those who do not 
+have mental health problems, according to a Department of Correction analysis of 2012 releases. Inmates battling addiction fare worse: About half are convicted of a new 
+crime within three years, according to one state study. And inmates with a “dual diagnosis” of addiction and mental illness, like Nick Lynch, do the worst of all, national 
+studies show</q> (<a href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Cramer et al., 2016)</a>. Recidivism follows shortly behind for untreated individuals who 
+have no resources or received insufficient treatment in jail like Nick Lynch did. Our system is currently set up to keep the mentally ill who can't afford help or 
+treatment off the streets and if not in a mental institution then jail/prison. Jails and prisons were never redesgined after the downfall of psychiatric istitutions in the 
+middle of the 20th century. They were never redesigned to be theraputic for mentally ill, but "If you tried to design an environment where mental illness would thrive, you 
+might end up with something much like jail or prison" (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. </p>
+	
+	<h1>What is being done or can be done?</h1>
+	<p style="display: inline;">Because of the growing attention to mental health issues many researchers and organizations are joining efforts to reform our system. These 
+reforms are research-based as are many interventions put in place today aimed to help prisoners' mental health.  One example effort is the Rochester FACT prototype 
+which targets the criminogenic risk factors discussed previously <div class="click-me" style="display:inline-block"><a href="#target">(click here to see 
+reference):</a></div> <q>The Rochester FACT prototype is a result of several years of research, 
+trial-and error, multiple studies, and focus groups. The program uses legal leverage to engage individuals in mental health treatment that systematically targets their criminogenic risk factors.</q> (<a 
+href="http://www.futurity.org/mental-illness-prison-1447922-2/"><i class='fas fa-link' style='font-size: 15px;' ></i>Roth-Rochester, 2017)</a>. This prototype requires 
+mental health and criminal justice professionals to problem-solve together to seek out therapeutic alternatives to punishment and preventing recidivism by targeting these 
+risk factors that drive their involvement with the criminal justice system (<a href="http://www.futurity.org/mental-illness-prison-1447922-2/"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Roth-Rochester, 2017)</a>.  There are many proposed research-based reforms, however, "there is still a lack of research conducted in prisons 
+compared to community settings is secondary to a combination of organisational difficulties (such as obtaining permissions 
+and running interventions alongside mandated programmes), a lack of specific research funding, and a perceived division of prisoner health from public health in general" 
+(<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5008459/"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Fazel, Hayes, Bartellas, Clerici, & Trestman, 2016)</a>. Research is important to understand the problem. Medication trials along with controlled trials of psychological 
+therapies, such as group, mediation-based, cognitive-behavioral, dialectical behavioral, are conducted at a particularly low rate with inconsistent findings (<a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5008459/"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Fazel et al., 2016)</a>. An absence of quality treatment trials reduces the effectiveness of psychological interventions when generalized to the entire prison population. Each of these 
+research-based reforms needs substantial research to be considered credible. Trials need to be conducted to assure resources are allocated to the most successful trials. 
+Quality research takes time and money, and specific research funding is lacking from the government. <br> Changing the mindset of staff and officials would 
+greatly improve mental health treatment in prisons. Most people don't think inmates deserve good mental health care because they are criminals; this is 
+their punishment. However, Pat McCarthy, a health service administrator at the Hampden County Correctional Center in Ludlow, recognizes this as dangerous 
+thinking. He understands that "The less we do here, to stabilize and treat them, the less prepared they are to go back to the community” (<a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Cramer et al., 2016)</a>. The way we think about the purpose of incarceration and how criminals should be treated plays an important role in their 
+mental health. Incarceration is the punishment, not the maltreatment and disregard for health. The safety and health for inmates inside of prison should be well maintained and thus the thought process and stigmatization also needs to be reformed. </p>
+
+<p>Additionally, outside of research, other more public movements are experience-based, coming from people who have seen the system fail the mentally ill first-hand such 
+as Patrisse Cullors, the founder of Reform LA Jails, whose brother was incarcerated and was diagnosed with schizoaffective disorder. Cullors is working to improve the 
+prison and mental health care systems but says "it's actually an improvement of alternatives to incarceration" and community-based treatment (<a 
+href="https://www.youtube.com/watch?time_continue=182&v=C1UlR1SQQYk&feature=emb_logo"><i class='fas fa-link' style='font-size: 15px;' ></i>NowThis, 2019)</a>. Reference the video below to learn more. </p>
+	<div class="video"><iframe width="800" height="450" <iframe width="800" height="581" src="https://www.youtube.com/embed/C1UlR1SQQYk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<p style="display:inline;">There are proposed policies and reforms being discussed daily to counter the mental health crisis in the prison system. Policies have been put in place but can't be 
+implemented to the full extent as discussed previously. <div class="click-me2" style="display:inline-block"><a href="#target2">(Click here to see reference to text above)</a></div> The important step is to not just make policies 
+but to implement these policies with sufficient resources. The criminal justice system needs to face major reform to reduce the number of mentally ill in the system. As 
+Lamberti stated, "If we want to fix the problem, we have to understand it", and the best way to understand it is through research(<a 
+href="http://www.futurity.org/mental-illness-prison-1447922-2/"><i class='fas fa-link' style='font-size: 15px;' ></i>Roth-Rochester, 2017)</a>. </p>
+</div>	
+	<div class="references">
+	<h1 style="text-align:center;">References</h1>
+	<p class="refText"> 
+	Bronson, J., & Berzofsky, M. (2017). <a href="https://www.bjs.gov/content/pub/pdf/imhprpji1112.pdf">Indicators of Mental Health Problems Reported by Prisoners and Jail 
+Inmates, 2011-12.</a> Indicators of Mental Health Problems Reported by Prisoners and Jail Inmates, 2011-12. U.S. Department of Justice - Bureau of Justice Statistics.
+<br><br>
+Cramer, M., Russell, J., Rezendes, M., Helman, S., & Wallack, T. 
+(2016, November 25). There may be no worse place for mentally ill people to receive treatment than prison yet a growing number end up in the 'new asylums'. Retrieved 
+2019, from <a 
+href="https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore">https://apps.bostonglobe.com/spotlight/the-desperate-and-the-dead/series/prisons/?p1=Spotlight_MI_Story_Explore.</a>
+<br><br>
+Fazel, S., Hayes, A., Bartellas, K., Clerici, M., & Trestman, R. (2016). The mental health of prisoners: a review of prevalence, adverse outcomes and interventions. Lancet 
+Psychiatry, 3(9), 871–881. Retrieved from <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5008459/">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5008459/</a>
+<br><br>
+James, D. J., & Glaze, L. E. (2006). <a href="https://www.bjs.gov/content/pub/pdf/mhppji.pdf">Mental Health Problems 
+of Prison and Jail Inmates. Mental Health Problems of Prison and Jail Inmates </a>. U.S. Department of Justice - Bureau of Justice Statistics.
+<br><br>
+NowThis News(2019, September 1). How Our Prisons Prey on People With Mental Illness .Retrieved 2019, from <a 
+href="https://www.youtube.com/watch?time_continue=182&v=C1UlR1SQQYk&feature=emb_logo"> https://www.youtube.com/watch?time_continue=182&v=C1UlR1SQQYk&feature=emb_logo.</a>
+<br><br>
+Roth, A. (2018, March 31). A 
+'hellish world': the mental health crisis in America's prisons. Retrieved 2019, from <a 
+href="https://www.theguardian.com/society/2018/mar/31/mental-health-care-crisis-overwhelming-prison-jail" style='font-size: 15px;'>  
+https://www.theguardian.com/society/2018/mar/31/mental-health-care-crisis-overwhelming-prison-jail.</a>
+<br><br>
+Roth-Rochester, C. (2017, June 1). How to keep people with mental 
+illness out of prison. Retrieved 2019, from <a 
+href="http://www.futurity.org/mental-illness-prison-1447922-2/">http://www.futurity.org/mental-illness-prison-1447922-2/.</a>
+<br><br>
+Thompson, C., & Eldridge, T. E. (2018, 
+November 21). Treatment Denied: The Mental Health Crisis in Federal Prisons. Retrieved 2019, from <a 
+href="https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons">https://www.themarshallproject.org/2018/11/21/treatment-denied-the-mental-health-crisis-in-federal-prisons.</a>
+<br><br>
+U.S.: Number of Mentally Ill in Prisons Quadrupled. (2006, 
+September 5). Retrieved from <a 
+href="https://www.hrw.org/news/2006/09/05/us-number-mentally-ill-prisons-quadrupled#">https://www.hrw.org/news/2006/09/05/us-number-mentally-ill-prisons-quadrupled#.</a>
+<br>
+</p>
+	</div>
+</div>
+<div class="progress-container">
+	<div class="progress-bar" id="myBar"></div>
+</div>
+
+<script type="text/javascript">
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+var btn = document.getElementById("btn");
+  btn.addEventListener("click", totalScore);
+  
+function totalScore(){
+	console.log("pressed");
+	//q1= document.getElementById("q1").value;
+	//q2 = document.getElementById("q2").value;
+	var i, total = 0;
+    var pts = document.getElementsByName('q[]');
+    for(i=0; i<pts.length; i++){
+      total += Number(pts[i].value);
+    }
+	document.getElementById("score").innerHTML = "  Your score:" + total;
+}
+//taken from: https://stackoverflow.com/questions/985272/selecting-text-in-an-element-akin-to-highlighting-with-your-mouse
+function selectText(node) {
+    node = document.getElementById(node);
+
+    if (document.body.createTextRange) {
+        const range = document.body.createTextRange();
+        range.moveToElementText(node);
+        range.select();
+    } else if (window.getSelection) {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(node);
+        selection.removeAllRanges();
+        selection.addRange(range);
+    } else {
+        console.warn("Could not select text in node: Unsupported browser.");
+    }
+}
+
+const clickable = document.querySelector('.click-me');
+clickable.addEventListener('click', () => selectText('target'));
+const clickable2 = document.querySelector('.click-me2');
+clickable2.addEventListener('click', () => selectText('target2'));
+
+</script>
+</body>
+</html>

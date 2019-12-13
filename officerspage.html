@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Loads in icon library-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<head> 
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title> Capstone
+</title>
+<link rel="stylesheet" type="text/css" href= "style1.css">
+<link href='https://fonts.googleapis.com/css?family=Julius Sans One' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+<link href='https://fonts.googleapis.com/css?family=Barlow Semi Condensed' rel='stylesheet'>
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+
+</style>
+
+<script type="text/javascript">
+// When the user scrolls the page, execute myFunction 
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) *100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<script type="text/javascript">
+//for chart
+      google.charts.load('current', {'packages':['bar']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['2013', 'PTSD+', 'Depression+'],
+          ['Males', .305, .287],
+          ['Females', .217, .221],
+          ['Security Staff', .341, .31],
+          ['Non-Security Staff', .215, .221],
+		  ['Male Security Staff', .358, .325],
+		  ['Female Security Staff', .296, .271]
+        ]);
+		var options = {
+          chart: {
+            title: 'Estimated Prevalence (%) of Disorders among Various Subgroups of Corrections Professionals',
+            subtitle: '2013 Study: PTSD+ and Depression+ were defined in terms of a DASS-21 depression score falling into the Moderate-to-Extreme symptom severity range' 
+          },
+          bars: 'vertical',
+          vAxis: {format: 'percent'},
+          height: 250,
+          colors: ['#c63939', '#a7cef0']
+		  
+        };
+
+        var chart = new google.charts.Bar(document.getElementById('chartContainer'));
+
+        chart.draw(data, google.charts.Bar.convertOptions(options));
+      }
+</script>
+</head>
+
+<body>
+
+<div id="header">
+	<div class="title">
+		<h1> Mental Health in the Prison System </h1>
+	</div>
+</div>
+<div class="nav">
+	<a href="homepage.html">Home</a>
+	<div class="prisonerbutton">
+		<button class="dropbtn">Incarcerated People
+			<i class="fa fa-caret-down"></i>
+		</button>
+		<div class="prisoners-content">
+			<a href="genpop.html">General Population</a>
+			<a href="femalepage.html">Incarcerated Women</a>
+			<a class="active" href="solitarypage.html">Solitary Confinement</a>
+			<a href="deathrowpage.html">Death Row</a>
+		</div>
+	</div>
+	<a href="officerspage.html">Officers</a> 
+	
+		
+	</div>
+	<div class="banner">
+		<img class="officer-img" src="correctionalofficers.jpg" alt="banner-image">
+		<div class= "banner-title">
+			<h1> Officer Strain</h1>
+		</div>
+	</div>
+
+
+</div>
+<div id="content">
+	<div class="text">
+	<h1>Getting the Attention they Deserve</h1>
+	<p>Mental health has always been an existing topic within corrections but, studies have been overwhelmingly based on inmate populations and the pressures of prison life they experience. Within the last couple of years, Correctional Officer (CO) wellness has begun to get the increasing attention that it deserves because of the noticeable cumulative impact on this group's mental health and the high rate of suicide rates associated with it. </p>
+	<div class="blockquote">	
+	<p><q>We do a decent job with saying that ‘this system messes with the incarcerated, this system impacts 
+	their lives’, but what we don’t do, what we don’t say is, ‘what’s the impact that this job is having on the correctional officers?’</q></p>
+		<div class="blockquote-footer">
+		<p>-Stephen B. Walker, <a href="https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>For Corrections Officers and Cops, a New Emphasis on Mental Health</q></a></p>
+		</div>
+	</div>
+	<p>Correctional officers are often overlooked, but daily, these workers experience the same environments as the inmates do and often have to interact with them as well. The New Jersey Police Suicide Task Force reported in 2009 that from 2003-2007, the suicide rate for correctional officers, 34.8 per 100,000, was more than double that of police officers', 15.1 per 100,000, suicide rates; Correctional Officers' 
+risk of suicide was 39% higher than that of all other professions combined(<a href="http://desertwaters.com/wp-content/uploads/2013/09/Comorbidity_Study_09-03-131.pdf">
+	<i class='fas fa-link' style='font-size: 15px;' ></i>Denhof & Spinaris </a>, 2013). Additionally, the Correctional Peace Officers Association in 2013 reported a suicide rate of 19.4 deaths per 100,000 for Correctional Officers compared with 12.6 in the general U.S. population (<a href="https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health">
+	<i class='fas fa-link' style='font-size: 15px;' ></i>Weichselbaum</a>, 2017). There are noticeable rises in suicide rates for correctional officers, but what are the factors that lead to this? There have been few completed studies investigating the rates of depression in corrections professionals in the United States, but with the new attention on correctional officer wellness, individuals are hoping to change this.</p>
+	</div>
+	
+	<div class="text">
+	<p> </p>
+	
+	<h1>Why are these Rates so High?</h1>
+	
+	<p>Being a correctional officer is considered a high trauma job which is associated with PTSD and high stress.
+	A job that has high psychological and physical demands and low social support are likely precursors to depressive 
+	symptoms in workers (<a href="http://desertwaters.com/wp-content/uploads/2013/09/Comorbidity_Study_09-03-131.pdf"><i class='fas fa-link' style='font-size: 15px;' >
+	</i>Denhof & Spinaris </a>, 2013). A <a href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review"><i 
+class='fas fa-link' style='font-size: 15px;' ></i>2013 Correctional Officer Wellness and Safety Literature Review</a> divided up the sources of 
+correctional officer stress into 4 categories: inmate-related, occupational, organizational and administrative, and psycho-social stressors.</p> 
+	<div class="source"><sub>Hover over chart to enlarge. This data was taken from <a href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review"><i class='fas fa-link' style='font-size: 15px;' ></i>Brower, 2013)</a></sub></div>
+	<img class="image_zoom" src="officerstressorsTABLE.png" alt="Stressors Table">
+	<p>Table 1 provides an overview of the specific stressors within each category. These stressors can have a severe impact on the physical and mental 
+health of COs. Inmate-related stressors are perhaps the most serious since they involve the threat of violence or danger for COs. COs are required to deal 
+with violent inmates and shabby conditions daily. The increasing prison populations and overcrowding also increase the levels of violence and therefore 
+stress. The National Institute of Justice found that organizational and administrative stressors are also a significant source of stress especially 
+with their high caseload, paperwork, and deadlines (<a 
+href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Brower, 2013)</a>. Additionally, there have been staffing and resource shortages that put more pressure on the COs. 
+This backs that COs experience high demands with little social support. A correlation was found between CO stress and budget cuts, hiring freezes, and 
+layoffs. All of these factors add to the negative perceptions COs' have of management (<a 
+href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Brower, 2013)</a>. As COs develop negative perceptions of management, conflict between administration and COs can begin to disrupt the system. Stress can induce serious physical medical problems such as heart disease, 
+hypertension, etc., while the mental medical problems can be 
+linked to psychological and emotional disorders. </p>
+	<div class="blockquote">	
+	<p><q>If we don't do something about it, someone's going to pay the cost for it. And who's going to pay the cost? Your wife. Your husband. Your 
+significant other. Your children. Your friends. The inmate. Because you're so stressed out, you lose it one day. And when you lose it, God only 
+knows.</q></p>
+		<div class="blockquote-footer">
+		<p>-Norman Seabrook, president of the New York City Corrections Officers' Benevolent Association <a href="https://www.newsweek.com/2014/06/06/prison-officers-need-help-they-wont-ask-it-252439.html" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>Prison Officers Need Help, but They Won't Ask for It</q></a></p>
+		</div>
+	</div>
+
+<p>In 2014 a CO's girlfriend called warning Seabrook that her girlfriend was talking about killing herself. "She lost it," says Seabrook. "Turns out we 
+found a straight-edge razor in her car, she's threatening to commit suicide... Nineteen years as a New York City 
+corrections officer, and she says, 'I have nothing else left to live for. I'm going to cut my throat at lunchtime.'" (<a 
+href="https://www.newsweek.com/2014/06/06/prison-officers-need-help-they-wont-ask-it-252439.html"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Lopez, 2014)</a>. Our corrections system from a mental health aspect is failing COs who have comparable PTSD to military combat veterans (<a 
+href="https://www.newsweek.com/2014/06/06/prison-officers-need-help-they-wont-ask-it-252439.html"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Lopez, 2014)</a>.  From a recent national study of 3,000 corrections professionals, 27% were suffering from PTSD which 
+contributes to higher levels of memory impairment, depression, obesity, and sleep-related issues (<a href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review"><i class='fas fa-link' style='font-size: 15px;' >
+	</i>Brower, 2013)</a>.
+	A 2011 logitudinal study of PTSD founded a correlation between elevated rates of full/partial PTSD and elevated suicide rates(<a href="http://desertwaters.com/wp-content/uploads/2013/09/Comorbidity_Study_09-03-131.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>Denhof & Spinaris </a>, 2013).</p>
+	
+		<div id="chartContainer" style="height: 250px; width: 90%;">
+		</div>
+	
+	<div class="source"><sub>Table 2: This data was taken from (<a href="http://desertwaters.com/wp-content/uploads/2013/09/Comorbidity_Study_09-03-131.pdf"><i class='fas fa-link' style='font-size: 15px;' ></i>Denhof & Spinaris </a>, 2013).</sub></div>
+	<p>Table 2 divides the prevalence of PTSD and depression, given that they often go together, by subgroup. These numbers only cover the percentage of the population 
+that experienced moderate-to-extreme symptoms. Generally though, 65% of officers, of a survey released earlier in 2017 as a part of the Correctional Officer Health and 
+Wellness Project, said they had experienced at least one of the sysmptoms associated with PTSD; about one in nine also reported having thought about or attempting suicide (<a 
+href="https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Weichselbaum</a>, 2017). Although the population sizes and their sampling regions differ, these numbers have caught the attention of researchers and criminal 
+justice reformers. There is still much research to do. With the growing interest of CO wellness and research on their mental health will pave the design of permanent 
+mental health programs.</p>
+	
+	<h2>Women in Corrections</h2>
+	<p>Women working in corrections face additional obstacles than men do and thus deserve extra analysis. There are many arguments and assumptions as to 
+why women should not work as correctional officers due to historical resistance to the integration of women into a masculinized occupation (<a href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review"><i class='fas fa-link' style='font-size: 15px;'>
+	</i>Brower, 2013)</a>. Beliefs that women are physically weaker and can not handle working in an environment that 
+is predominantly male create additional stress for women in this work setting. Regardless of these arguments and beliefs, female COs have been "permitted to supervise both male and female inmates unless the males are nude for 
+prolonged periods of time or must come in contact with male genitalia" under the Civil Rights Act of 1964, Title VII (<a href="https://www.correctionsone.com/women-in-corrections/articles/women-in-corrections-face-a-number-of-obstacles-h36HYnkGxjEdO1SW/">
+	<i class='fas fa-link' style='font-size: 15px;' ></i>Mann, 2016)</a>. They now make up nearly 30 percent of correctional employees (<a 
+href="https://www.washingtonpost.com/local/social-issues/women-working-in-male-prisons-face-harassment-from-inmates-and-co-workers/2018/01/27/21552cee-01f1-11e8-9d31-d72cf78dbeee_story.html">
+	<i class='fas fa-link' style='font-size: 15px;' ></i>Chandler, 2018</a>). Melissa Mann who has 18 years of experience in Corrections, Community Policing and more, 
+discusses some of her first hand experiences in her article <a 
+href="https://www.correctionsone.com/women-in-corrections/articles/women-in-corrections-face-a-number-of-obstacles-h36HYnkGxjEdO1SW/">
+	<i class='fas fa-link' style='font-size: 15px;' ></i>"Women in corrections face a number of obstacles"</a>. 
+	Mann describes being called "sweetie" and "sexy" and "man hater" by male supervisors not by inmates, so there
+	is a gender-bias within the hierarchy of the workers. Female officers are more likely than their male counterparts to identify their supervisors as a contribution 
+to stress in the workplace (<a href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review"><i class='fas fa-link' 
+style='font-size: 15px;' ></i>Brower, 2013)</a>. Women also experience harassment and discrimination by their colleagues and inmates. In Florida, a female correctional 
+officer had reported being sexually assaulted by 17 inmates:</p>
+	<div class="blockquote">	
+	<p><q>I was devastated. I was traumatized. I was physically and sexually assaulted</q></p>
+		<div class="blockquote-footer">
+		<p>-Unidentified Officer, <a href="https://www.newsweek.com/2014/06/06/prison-officers-need-help-they-wont-ask-it-252439.html" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>Prison Officers Need Help, but They Won't Ask for It</q></a></p>
+		</div>
+	</div>
+	<p>This is not the only case of sexual harrassment a female CO has reported. Taronica White successfully filed a class-action lawsuit for sex discrimination and a hostile work environment at the 
+nation's largest federal prison complex settling for $20 million and 20 pages worth of procedural changes to improve safety, including improved sexual harrassment training (<a 
+href="https://www.washingtonpost.com/local/social-issues/women-working-in-male-prisons-face-harassment-from-inmates-and-co-workers/2018/01/27/21552cee-01f1-11e8-9d31-d72cf78dbeee_story.html">
+	<i class='fas fa-link' style='font-size: 15px;' ></i>Chandler, 2018</a>). When White first joined the workplace at a new maximum security prison, she felt a 
+culture shock. She had worked at four other state and federal prisons, but when she got to the new maximum security prison in Coleman she felt the need to conform 
+to the environment.</p>
+	<div class="blockquote">	
+	<p><q>You change the way you think, the way you dress, the way you look. Even your soap -- you want to make sure you use unscented soap; whatever means you will bring less attention to yourself</q></p>
+		<div class="blockquote-footer">
+		<p>-Taronica White, <a href="https://www.washingtonpost.com/local/social-issues/women-working-in-male-prisons-face-harassment-from-inmates-and-co-workers/2018/01/27/21552cee-01f1-11e8-9d31-d72cf78dbeee_story.html" 
+		style='color:#d92626'> <i class='fas fa-link' style='font-size: 15px;'></i><q>Women working in male prisons face harassment from inmates and coworkers</q></a></p>
+		</div>
+	</div>
+	<p>White noticed that men were often not disciplined or held accountable and basic procedures were not being followed. White's case helped shed light on some of 
+the additional issues female COs face in the system from the inmates or coworkers. All these factors serve as additional stressors for women working in a 
+male-dominated field.</p>
+	
+	<h1>What is being done or can be done?</h1>
+	
+	<p>In May of 2017, Senate unanimously passed the <a href="https://www.congress.gov/bill/115th-congress/senate-bill/867/text"><i class='fas fa-link' 
+style='font-size: 15px;' ></i> Law Enforcement Mental Health and Wellness Act.</a> This act calls the Department of Defense and Department of Veteran Affairs to share a list of recommended mental health practices/services with Congress while supporting law enforcement agency efforts to protect mental health and the well-being of law enforcement officers (<a href="https://www.congress.gov/bill/115th-congress/senate-bill/867/text"><i class='fas fa-link' 
+style='font-size: 15px;' ></i> Law Enforcement Mental Health and Wellness Act", 2017)</a>. Unfortunately, what the bill does not require is the tracking of police suicides, similarly CO suicides(<a 
+href="https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Weichselbaum</a>, 2017). More research is also underway to fill the gap of this underreported sector and 
+to provide data to support proposals of reform. One example, is the work the California peace officers 
+	association is taking to partner with University of California, Berkeley to commit surveys of more than 8,600 corrections and parole officers across the state. Using the data, there will then be a baseline to develop and implement mental health services in response. The survey asks about officers'
+	experiences with violence, PTSD, suicidal thoughts, and their ideas for improving prisons (<a 
+href="https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health"><i class='fas fa-link' style='font-size: 
+15px;' ></i>Weichselbaum</a>, 2017). Additionally, the Correctional Officer Health and Wellness Project is working to include in-prison focus groups with COs and 
+integrate randomized experiments testing possible mental health services for COs like increased access to peer support officers and training or stress management (<a 
+href="https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health"><i class='fas fa-link' style='font-size: 15px;' 
+></i>Weichselbaum</a>, 2017).</p>
+	</div>
+	<div class="references">
+	<h1 style="text-align:center;">References</h1>
+	<p class="refText">
+	Brower, J. (2013, July). Correctional Officer Wellness Safety Lit Review. Retrieved from <a 
+href="https://www.themarshallproject.org/documents/3863937-Correctional-Officer-Wellness-Safety-Lit-Review.">https://www.themarshallproject.org/documents/3863937-Correct
+ional-Officer-Wellness-Safety-Lit-Review.</a> 
+<br><br>
+
+Chandler, M. A. (2018, January 27). Women working in male 
+prisons face harassment from inmates and co-workers. Retrieved 2019, from 
+<a href="https://www.washingtonpost.com/local/social-issues/women-working-in-male-prisons-face-harassment-from-inmates-and-co-workers/2018/01/27/21552cee-01f1-11e8-9d31-d72cf78
+dbeee_story.html.">https://www.washingtonpost.com/local/social-issues/women-working-in-male-prisons-face-harassment-from-inmates-and-co-workers/2018/01/27/21552cee-01f1-11e8
+-9d31-d72cf78dbeee_story.html.</a> 
+<br><br>
+
+Denhof, M., & Spinaris, C. (2013). Depression, PTSD, and Comorbidity in United States Corrections Professionals: Prevalence and 
+Impact on Health and Functioning. Desert Waters Correctional Outreach. Retrieved from <a 
+href="desertwaters.com/wp-content/uploads/2013/09/Comorbidity_Study_09-03-131.pdf">desertwaters.com/wp-content/uploads/2013/09/Comorbidity_Study_09-03-131.pdf</a> 
+<br><br>
+
+Lopez, O. (2014, May 27). Prison Officers Need Help, but They Won't Ask for It. Retrieved 2019, from <a href="
+https://www.newsweek.com/2014/06/06/prison-officers-need-help-they-wont-ask-it-252439.html.">https://www.newsweek.com/2014/06/06/prison-officers-need-help-they-wont-ask-it-252439.html.</a> 
+<br><br>
+
+Mann, M. (2016, August 16). Women in corrections face a number of 
+obstacles. Retrieved from <a href="https://www.correctionsone.com/women-in-corrections/articles/women-in-corrections-face-a-number-of-obstacles-h36HYnkGxjEdO1SW/.">
+https://www.correctionsone.com/women-in-corrections/articles/women-in-corrections-face-a-number-of-obstacles-h36HYnkGxjEdO1SW/.</a> 
+<br><br>
+
+Weichselbaum, S. (2017, June 14). 
+For Corrections Officers and Cops, a New Emphasis on Mental Health. Retrieved 2019, from <a href="https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health.">
+https://www.themarshallproject.org/2017/06/14/for-corrections-officers-and-cops-a-new-emphasis-on-mental-health.</a> 
+<br>
+</p>
+	</div>
+</div>
+
+<div class="progress-container">
+	<div class="progress-bar" id="myBar"></div>
+</div>
+<!--<div id="footer">
+
+</div>-->
+
+</body>
+</html>
